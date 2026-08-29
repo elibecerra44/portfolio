@@ -27,7 +27,7 @@ export const projects: Project[] = [
 		background: 'lime',
 		variant: 'desktop',
 		href: '/work/nextpoint',
-		image: CliengoOnboardingImage,
+		image: cliengoOnboardingImage,
 		alt: 'Pantalla de onboarding de Cliengo mostrando los primeros pasos para configurar la cuenta',
 		imageClass: 'project-preview-image',
 	},
