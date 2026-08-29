@@ -2,7 +2,7 @@ import type { ImageMetadata } from 'astro';
 import bcombsImage from '../assets/images/bcombs.webp';
 import boardspeakImage from '../assets/images/boardspeak.webp';
 import nestaraImage from '../assets/images/nestara.webp';
-import nextpointImage from '../assets/images/nextpoint.webp';
+import cliengoOnboardingImage from '../assets/images/cliengo-onboarding.webp';
 
 export type Project = {
 	name: string;
@@ -20,15 +20,15 @@ export const workPageSize = 10;
 
 export const projects: Project[] = [
 	{
-		name: 'Nextpoint',
-		title: 'Making legal transcripts easier to scan, summarize, and act on with AI',
+		name: 'Cliengo',
+		title: 'Rediseño de onboarding self-service',
 		description:
-			'A transcript workflow rethought for faster review, clearer patterns, and less manual synthesis under pressure.',
+			'Rediseño de la experiencia de onboarding para acompañar a los nuevos usuarios en sus primeros pasos y ayudarlos a descubrir el valor de la plataforma.',
 		background: 'lime',
 		variant: 'desktop',
 		href: '/work/nextpoint',
-		image: nextpointImage,
-		alt: 'Nextpoint dashboard preview showing transcript and summary metrics',
+		image: CliengoOnboardingImage,
+		alt: 'Pantalla de onboarding de Cliengo mostrando los primeros pasos para configurar la cuenta',
 		imageClass: 'project-preview-image',
 	},
 	{
