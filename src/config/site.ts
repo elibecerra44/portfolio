@@ -66,4 +66,3 @@ export const siteConfig: SiteConfig = {
 		{ href: 'https://www.behance.net/elianabecerra', label: 'Behance' },
 	],
 };
-```
