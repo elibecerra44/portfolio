@@ -20,27 +20,28 @@ export type SiteConfig = {
 	socialLinks: SiteLink[];
 };
 
-const defaultSiteUrl = 'https://maria-lake.vercel.app';
+const defaultSiteUrl = 'https://resilient-cheesecake-ed7aed.netlify.app';
 const envSiteUrl = process.env.SITE_URL ?? process.env.PUBLIC_SITE_URL;
 const normalizedSiteUrl = (envSiteUrl || defaultSiteUrl).replace(/\/+$/, '');
 
 export const siteConfig: SiteConfig = {
-	name: 'Maria',
-	title: 'Maria | Astro Theme for UI/UX Designer Portfolios',
+	name: 'Eliana Becerra',
+	title: 'Eliana Becerra | Product Designer',
 	description:
-		'A clean Astro theme for UI/UX designer portfolios, case studies, and modern product design presentations.',
-	// Set SITE_URL or PUBLIC_SITE_URL to keep canonicals, robots.txt, and the sitemap aligned in each environment.
+		'Diseñadora UX/UI con base en diseño gráfico y experiencia en productos digitales. Me enfoco en entender problemas reales y transformarlos en soluciones claras, centradas en las personas.',
 	siteUrl: normalizedSiteUrl,
-	email: 'hello@maria.com',
-	locale: 'en-US',
-	authorName: 'Maria',
-	authorRole: 'UX Designer',
+	email: 'eli.becerra44@gmail.com',
+	locale: 'es-AR',
+	authorName: 'Eliana Becerra',
+	authorRole: 'Product Designer',
 	keywords: [
-		'Astro UI UX portfolio theme',
-		'UI UX designer portfolio template',
-		'Astro portfolio template',
-		'product designer portfolio theme',
-		'case study portfolio theme',
+		'Product Designer',
+		'UX Designer',
+		'UI Designer',
+		'UX/UI Designer',
+		'SaaS Product Designer',
+		'Digital Product Design',
+		'UX Portfolio',
 	],
 	ogImage: '/og-image.svg',
 	navLinks: [
@@ -61,7 +62,8 @@ export const siteConfig: SiteConfig = {
 		{ href: '/terms', label: 'Terms' },
 	],
 	socialLinks: [
-		{ href: 'https://www.linkedin.com/', label: 'LinkedIn' },
-		{ href: 'https://dribbble.com/', label: 'Dribbble' },
+		{ href: 'https://www.linkedin.com/in/elianalaurabecerra/', label: 'LinkedIn' },
+		{ href: 'https://www.behance.net/elianabecerra', label: 'Behance' },
 	],
 };
+```
