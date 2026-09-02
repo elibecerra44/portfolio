@@ -7,6 +7,7 @@ import { projects, workPageSize } from '../../data/projects';
 const page = 1;
 const totalPages = Math.ceil(projects.length / workPageSize);
 const visibleProjects = projects.slice(0, workPageSize);
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -34,14 +35,14 @@ const visibleProjects = projects.slice(0, workPageSize);
 								<p class="work-description">{project.description}</p>
 
 								<div class="actions">
-									<a href={project.href}>
+									<a href={`${base}${project.href.replace(/^\//, '')}`}>
 										<span>View case study</span>
 										<span aria-hidden="true">-&gt;</span>
 									</a>
 								</div>
 							</div>
 
-							<a class="work-visual" href={project.href}>
+							<a class="work-visual" href={`${base}${project.href.replace(/^\//, '')}`}>
 								<Image
 									class={project.imageClass}
 									src={project.image}
@@ -62,7 +63,10 @@ const visibleProjects = projects.slice(0, workPageSize);
 					totalPages > 1 &&
 						Array.from({ length: totalPages }, (_, index) => {
 							const pageNumber = index + 1;
-							const href = pageNumber === 1 ? '/work' : `/work/page/${pageNumber}`;
+							const href =
+	  pageNumber === 1
+		? `${base}work`
+		: `${base}work/page/${pageNumber}`;
 
 							return (
 								<a
