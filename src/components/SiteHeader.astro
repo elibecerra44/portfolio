@@ -15,7 +15,7 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 	<div class="shared-header-actions">
 		<nav class="shared-nav shared-nav-desktop" aria-label="Primary navigation">
 			{siteConfig.navLinks.map((link) => (
-				<a href={`${base}${link.href.replace(/^\//, '')}`} aria-current={link.href === currentPath ? 'page' : undefined}>
+				<a href={`${base}${link.href}`} aria-current={link.href === currentPath ? 'page' : undefined}>
 					{link.label}
 				</a>
 			))}
@@ -29,11 +29,11 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 					aria-controls={menuPanelId}
 				>
 					<span>Other</span>
-					<img src={`${base}icons/chevron-down.svg`} alt="" width="16" height="16" />
+					<img src={`${base}/icons/chevron-down.svg`} alt="" width="16" height="16" />
 				</button>
 				<div class="shared-menu-panel" id={menuPanelId} role="menu" aria-label="More navigation pages">
 					{siteConfig.extraPages.map((link) => (
-						<a href={`${base}${link.href.replace(/^\//, '')}`} role="menuitem">
+						<a href={`${base}${link.href}`} role="menuitem">
 							{link.label}
 						</a>
 					))}
@@ -101,7 +101,7 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 					{siteConfig.name}
 				</a>
 
-				{siteConfig.navLinks.map((link) => <a href={`${base}${link.href.replace(/^\//, '')}`}>{link.label}</a>)}
+				{siteConfig.navLinks.map((link) => <a href={`${base}${link.href}`}>{link.label}</a>)}
 
 				<details class="shared-mobile-submenu">
 					<summary
@@ -110,7 +110,7 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 						aria-controls={mobileSubmenuPanelId}
 					>
 						<span>Other</span>
-						<img src={`${base}icons/chevron-down.svg`} alt="" width="16" height="16" />
+						<img src={`${base}/icons/chevron-down.svg`} alt="" width="16" height="16" />
 					</summary>
 					<div class="shared-mobile-submenu-panel" id={mobileSubmenuPanelId}>
 						{siteConfig.extraPages.map((link) => <a href={link.href}>{link.label}</a>)}
