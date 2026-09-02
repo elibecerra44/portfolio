@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import { projects } from '../data/projects';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -31,7 +33,9 @@ import { projects } from '../data/projects';
 				<div class="projects-grid">
 					{
 						projects.map((project, index) => (
-							<a class="project-link" href={project.href}>
+							<a class="project-link"
+	href={`${base}${project.href.replace(/^\//, '')}`}
+>
 								<article class={`project-card ${project.background}`}>
 									<div class="project-header">
 										<p class="project-name">{project.name}</p>
