@@ -26,7 +26,7 @@ export const projects: Project[] = [
 			'Rediseño de la experiencia de onboarding para acompañar a los nuevos usuarios en sus primeros pasos y ayudarlos a descubrir el valor de la plataforma.',
 		background: 'lime',
 		variant: 'desktop',
-		href: '/work/nextpoint',
+		href: '/work/cliengo',
 		image: cliengoOnboardingImage,
 		alt: 'Pantalla de onboarding de Cliengo mostrando los primeros pasos para configurar la cuenta',
 		imageClass: 'project-preview-image',
