@@ -49,7 +49,7 @@ const caseStudySchema = [
 		name: 'Cliengo Case Study',
 		headline: 'Cliengo | Product Design Case Studies',
 		description:
-			'A sample UI/UX case study page included in the Maria Astro theme for designer portfolios, focused on product design storytelling and structured project presentation.',
+			'Algunas de las funcionalidades en las que trabajé durante mi paso por Cliengo.',
 		url: caseStudyUrl,
 		author: {
 			'@type': 'Person',
@@ -67,7 +67,7 @@ const caseStudySchema = [
 
 <Layout
 	title="Cliengo | Product Design Case Studies"
-	description="Some of the product design projects I worked on during my time at Cliengo."
+	description="Algunas de las funcionalidades en las que trabajé durante mi paso por Cliengo."
 	ogImageAlt="Cliengo product design case studies"
 	schema={caseStudySchema}
 >
@@ -83,11 +83,10 @@ const caseStudySchema = [
 					<span class="breadcrumb-separator" aria-hidden="true">/</span>
 					<span>Nextpoint</span>
 				</p>
-				<h1 class="display-title">Designing a legal dashboard that makes AI summaries feel useful, legible, and trustworthy.</h1>
+				<h1 class="display-title">Algunas de las funcionalidades en las que trabajé durante mi paso por Cliengo.</h1>
 				<div class="hero-subgrid">
 					<p class="hero-text">
-						Nextpoint needed a cleaner way to surface transcript activity, AI summaries, and
-						recent matters without overwhelming legal teams already working under time pressure.
+						Cliengo es una plataforma SaaS de automatización conversacional que ayuda a las empresas a captar, calificar y gestionar oportunidades de venta mediante chatbots e inteligencia artificial.
 					</p>
 				</div>
 			</section>
@@ -105,7 +104,7 @@ const caseStudySchema = [
 				<Image
 					class="lead-image"
 					src={cliengoImage}
-					alt="Nextpoint dashboard showing transcript metrics, AI summary, and recent transcript activity"
+					alt="Imagenes de la interfaz de Cliengo"
 					decoding="async"
 					widths={[720, 1080, 1440]}
 					sizes="(max-width: 78rem) 100vw, 78rem"
@@ -114,16 +113,10 @@ const caseStudySchema = [
 
 			<section class="summary-section">
 				<p class="section-kicker">Overview</p>
-				<h2>A clearer dashboard for legal teams working with transcripts, summaries, and case activity.</h2>
+				<h2>Rediseño de onboarding self service.</h2>
 				<div class="summary-main">
 					<p>
-						The original experience surfaced the right information, but not with enough
-						priority. Users could see metrics, summaries, and recent transcripts, yet still had
-						to stop and decide what mattered first.
-					</p>
-					<p>
-						My role was to simplify that decision-making: reshape the hierarchy, tighten the
-						interface, and make the AI-assisted parts of the dashboard feel genuinely useful.
+						¿Cómo mostrarle a los nuevos usuarios todo el valor que Cliengo puede aportar a su negocio?.
 					</p>
 					<p class="summary-meta">
 						<strong>Focus:</strong> Dashboard clarity, hierarchy, AI-assisted workflows
@@ -136,24 +129,18 @@ const caseStudySchema = [
 
 			<section class="editorial-section editorial-section-no-divider" id="process">
 				<div class="section-rail">
-					<p class="section-kicker">What I Did</p>
+					<p class="section-kicker">Contexto</p>
 				</div>
 				<div class="story-block">
 					<p>
-						I started by reviewing the existing dashboard against the product's real use cases:
-						what legal teams came here to check, what they needed to do next, and where the
-						interface forced unnecessary interpretation.
+						Cliengo estaba registrando un churn importante durante los primeros meses de vida de sus usuarios.
 					</p>
 					<p>
-						What stood out quickly was that the right information was present, but the page was
-						doing very little to guide attention. Metrics, summaries, recent transcripts, and
-						longer-term activity all lived together without a strong sense of sequence.
+						Una de las hipótesis era que el onboarding no estaba ayudando a los usuarios a entender el verdadero valor que Cliengo podía aportar a sus negocios. Además, había quedado desactualizado y presentaba una baja tasa de finalización.
 					</p>
 					<p>
-						So the redesign focused on order. High-level metrics came first, followed by a more
-						useful AI summary block, then recent transcript activity, and finally the broader
-						activity view. The goal was not to add more. It was to make the existing experience
-						easier to read and easier to trust.
+						
+El recorrido se enfocaba principalmente en configurar un chatbot o el Inbox, pero esto no era suficiente para que un nuevo cliente pudiera dejar su cuenta realmente preparada para empezar a trabajar.
 					</p>
 				</div>
 			</section>
@@ -172,29 +159,27 @@ const caseStudySchema = [
 
 			<section class="editorial-section">
 				<div class="section-rail">
-					<p class="section-kicker">Design Decisions</p>
+					<p class="section-kicker">El desafío</p>
 				</div>
 				<div class="story-block">
 					<p>
-						Legal software becomes visually heavy fast. Once everything looks equally important,
-						users stop getting guidance from the interface and start doing that work themselves.
+						Lograr un setup funcional al finalizar el onboarding.
 					</p>
 					<p>
-						The main decision here was to make the page feel calmer without making it feel empty.
-						That meant stronger grouping, more breathing room, and clearer contrast between
-						primary actions and supporting information.
+						
+La pregunta que guió el proyecto fue: ¿qué necesita configurar un usuario para entender realmente el valor de Cliengo? 
 					</p>
 					<p>
-						I also treated the AI summary as a useful next step rather than just another dashboard
-						module. That shift helped the page feel less like passive reporting and more like
-						active support.
+						
+A partir de este interrogante, definimos un recorrido ideal que contemplara las distintas funcionalidades necesarias para poner la plataforma en funcionamiento, sin limitar al usuario a un único camino.
+Al mismo tiempo, era importante encontrar una solución que pudiera implementarse con una capacidad de desarrollo limitada y que fuera fácil de iterar en el futuro.
 					</p>
 				</div>
 			</section>
 
 			<section class="editorial-section" id="outcome">
 				<div class="section-rail">
-					<p class="section-kicker">Outcome</p>
+					<p class="section-kicker">La propuesta</p>
 				</div>
 				<div class="story-block">
 					<ul class="outcome-list">
