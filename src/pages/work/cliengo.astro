@@ -180,21 +180,69 @@ Al mismo tiempo, era importante encontrar una solución que pudiera implementars
 				</div>
 			</section>
 
-			<section class="editorial-section" id="outcome">
-				<div class="section-rail">
-					<p class="section-kicker">La propuesta</p>
-				</div>
-				<div class="story-block">
-					<ul class="outcome-list">
-						{outcomes.map((item) => <li>{item}</li>)}
-					</ul>
-					<p class="closing-text">
-						This sample case study is intentionally concise, but the structure is the point: a
-						clear problem, a few grounded design decisions, and a visual outcome that feels tied
-						to the thinking behind it.
-					</p>
-				</div>
-			</section>
+			<section class="editorial-section">
+	<div class="section-rail">
+		<p class="section-kicker">La propuesta</p>
+	</div>
+
+	<div class="story-block">
+	<p>
+		Reemplazar el wizard con el que contábamos por una nueva sección dentro de la plataforma: “Primeros pasos en Cliengo”.
+	</p>
+
+	<p>
+		En lugar de encerrar al usuario en un flujo lineal, cada configuración se convirtió en un módulo independiente dentro de esta sección. Así, el usuario podía avanzar a su propio ritmo, volver a consultar cada paso cuando lo necesitara y visualizar cuánto le faltaba para completar la configuración.
+	</p>
+
+	<p>
+		También incorporamos una sección de “Obtener ayuda”, que permitía acceder a contenido de soporte directamente desde la experiencia.
+	</p>
+<p>
+		La nueva sección pasó a ser la pantalla de inicio por defecto para los nuevos usuarios, reemplazando el dashboard inicial, que mostraba métricas y conversaciones vacías y aportaba poco valor en esa instancia del recorrido.
+	</p>
+</div>
+</section>
+<section class="editorial-section">
+	<div class="section-rail">
+		<p class="section-kicker">Pruebas de usabilidad</p>
+	</div>
+
+	<div class="story-block">
+		<p>
+			Uno de los pasos principales de “Primeros pasos” era configurar un chatbot. Por su complejidad, decidí diseñar un wizard de configuración que acompañara al usuario durante el proceso y le permitiera elegir entre configurar un chatbot tradicional, entrenar uno con IA o combinar ambas opciones en un chatbot híbrido.
+		</p>
+<p>
+			
+Para explorar esta solución desarrollé un prototipo de media fidelidad apoyado en IA, que me permitió iterar rápidamente sobre el flujo y validarlo con los stakeholders antes de avanzar al diseño final.
+		</p>
+<p>
+			Luego utilicé este mismo prototipo para realizar pruebas de usabilidad con 5 participantes. Los hallazgos permitieron detectar principalmente problemas de comprensión en algunos conceptos y textos de la interfaz, que fueron incorporados y ajustados en la propuesta final.
+		</p>
+	</div>
+</section>
+<section class="editorial-section">
+	<div class="section-rail">
+		<p class="section-kicker">Diseño final</p>
+	</div>
+
+	<div class="story-block">
+		<p>
+			Una experiencia de onboarding más clara, flexible y orientada a generar valor desde el primer día.
+La sección de “Primeros pasos” guía al usuario hacia una configuración funcional sin limitar su recorrido y permitira iterar el onboarding de manera modular..
+		</p>
+	</div>
+</section>
+<section class="supporting-image-section">
+	<Image
+		class="supporting-image"
+		src={onboardingFinalImage}
+		alt="Diseño final del onboarding self service de Cliengo"
+		loading="lazy"
+		decoding="async"
+		widths={[720, 1080, 1440]}
+		sizes="(max-width: 78rem) 100vw, 78rem"
+	/>
+</section>
 		</main>
 	</div>
 </Layout>
