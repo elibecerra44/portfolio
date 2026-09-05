@@ -3,7 +3,11 @@ import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import { siteConfig } from '../../config/site';
-import cliengoImage from '../../assets/images/cliengo-onboarding.webp';
+import cliengoMainImage from '../../assets/images/cliengo-main.webp';
+import onboardingImage from '../../assets/images/cliengo-onboardingOK.webp';
+import onboardingFinalImage from '../../assets/images/cliengo-onboarding-final.webp';
+import aiImage from '../../assets/images/cliengo-ai.webp';
+import contactsImage from '../../assets/images/cliengo-contacts.webp';
 
 const highlights = [
 	{ label: 'Empresa', value: 'Cliengo' },
@@ -103,11 +107,11 @@ const caseStudySchema = [
 			<section class="lead-image-section">
 				<Image
 					class="lead-image"
-					src={cliengoImage}
-					alt="Imagenes de la interfaz de Cliengo"
-					decoding="async"
-					widths={[720, 1080, 1440]}
-					sizes="(max-width: 78rem) 100vw, 78rem"
+	src={cliengoMainImage}
+	alt="Interfaces de Cliengo"
+	decoding="async"
+	widths={[720, 1080, 1440]}
+	sizes="(max-width: 78rem) 100vw, 78rem"
 				/>
 			</section>
 
