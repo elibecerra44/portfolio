@@ -324,6 +324,114 @@ La propuesta permitió incorporar nuevas capacidades sin modificar el flujo de t
 	</div>
 </section>
 
+<section class="summary-section case-start">
+	<p class="section-kicker">Caso 3</p>
+
+	<h2>Unificación de contactos</h2>
+
+	<div class="summary-main">
+		<p>
+			El modelo de Cliengo vinculaba directamente los contactos con las conversaciones, haciendo que una misma persona pudiera registrarse varias veces a medida que interactuaba con la empresa. Esto generaba información fragmentada, reportes inconsistentes y mayor complejidad para los equipos que gestionaban las conversaciones.
+		</p>
+<p>
+			
+El proyecto buscó redefinir Contacto como una entidad única e independiente de la conversación, permitiendo centralizar su información e historial multicanal. La iniciativa también fue una oportunidad para rediseñar y migrar las secciones de Contactos y Conversaciones, que todavía funcionaban sobre una versión anterior de la plataforma.
+		</p>
+<p>
+			
+Mi rol: Análisis de competencia · Discovery e ideación · Alineamiento con PM y stakeholders · Definición de alcance y prioridades · Diseño de user flows y arquitectura de información · Wireframes y prototipos interactivos · Diseño UI siguiendo el Design System · Validación técnica con Desarrollo · Documentación funcional en Jira · Seguimiento de implementación · Análisis e iteraciones.
+		</p>
+	</div>
+</section>
+<section class="supporting-image-section">
+	<Image
+		class="supporting-image"
+		src={contactsImage}
+		alt="Proyecto de unificación de contactos de Cliengo"
+		loading="lazy"
+		decoding="async"
+		widths={[720, 1080, 1440]}
+		sizes="(max-width: 78rem) 100vw, 78rem"
+	/>
+</section>
+
+<section class="editorial-section">
+	<div class="section-rail">
+		<p class="section-kicker">Contexto</p>
+	</div>
+
+	<div class="story-block">
+		<p>
+			Un mismo cliente, múltiples contactos y conversaciones
+En el modelo anterior, contacto y conversación estaban directamente vinculados. Como consecuencia, nuevas interacciones podían generar nuevos contactos para una misma persona, fragmentando su historial y obligando a utilizar un sistema de agrupamiento de conversaciones difícil de comprender y gestionar.
+		</p>
+<p>
+			Esta lógica también impactaba en los reportes, la configuración de audiencias para campañas y la forma en que los clientes entendían el uso y cobro de sus planes.
+		</p>
+<p>
+			No era solo un problema de usabilidad. Clientes estratégicos ya habían solicitado una solución y algunos evaluaban alternativas de la competencia debido a esta limitación. Incluso existían casos en los que el problema había contribuido al churn.
+		</p>
+	</div>
+</section>
+<section class="editorial-section">
+	<div class="section-rail">
+		<p class="section-kicker">El desafío</p>
+	</div>
+
+	<div class="story-block">
+		<p>
+			Separar Contacto de Conversación y convertirlo en una entidad única dentro de Cliengo.
+		</p>
+<p>
+			Esto implicó definir qué información pertenecía al contacto y cuál a cada conversación, así como revisar flujos, relaciones y comportamientos que dependían del modelo anterior.
+		</p>
+<p>
+			El nuevo enfoque permitiría a los gestores acceder desde un único lugar a la información y al historial multicanal de cada cliente, simplificar asignaciones, obtener reportes más consistentes y trabajar con audiencias más confiables para sus campañas.
+		</p>
+<p>
+			Durante el proceso trabajé junto a PM, Customer Success y Ejecutivos de Cuenta para relevar necesidades y casos de uso, definir prioridades y validar las propuestas. En paralelo, mantuve instancias de validación con Desarrollo para asegurar la viabilidad técnica de los nuevos flujos.
+		</p>
+	</div>
+</section>
+<section class="editorial-section">
+	<div class="section-rail">
+		<p class="section-kicker">Una deuda por resolver</p>
+	</div>
+
+	<div class="story-block">
+		<p>
+			El rediseño de la pantalla de contactos y la experiencia de conversación dentro del Inbox.
+		</p>
+<p>
+			
+Cliengo ya había migrado gran parte del producto a una nueva versión, pero estas secciones todavía funcionaban sobre la plataforma anterior y se integraban mediante iframes. Esto generaba mayores tiempos de carga y una experiencia visual inconsistente.
+		</p>
+<p>
+			Rediseñé ambas experiencias utilizando el nuevo Design System y contemplando los flujos, estados, comportamientos y edge cases derivados de la unificación. 
+		</p>
+	</div>
+</section>
+
+<section class="editorial-section">
+	<div class="section-rail">
+		<p class="section-kicker">Resultado</p>
+	</div>
+
+	<div class="story-block">
+		<p>
+			Una base más consistente para la evolución del producto.
+		</p>
+<p>
+			La unificación permitió plantear una experiencia en la que cada cliente pudiera ser entendido como una única entidad, con múltiples conversaciones e interacciones asociadas a lo largo del tiempo.
+		</p>
+<p>
+			Además de simplificar la gestión cotidiana, el nuevo modelo logró mejorar la consistencia de los reportes y resolver una limitación que afectaba la percepción de valor de clientes estratégicos.
+		</p>
+<p>
+			Para Cliengo, el proyecto también estableció una base más sólida para la evolución del Inbox y futuras funcionalidades, al mismo tiempo que acercó Contactos y Conversaciones a la experiencia visual y técnica del resto de la plataforma.
+		</p>
+	</div>
+</section>
 
 		</main>
 	</div>
