@@ -3,15 +3,15 @@ import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import { siteConfig } from '../../config/site';
-import cliengoMainImage from '../../assets/images/cliengo-main.webp';
-import onboardingImage from '../../assets/images/cliengo-onboardingOK.webp';
+import juntemonos-main from '../../assets/images/juntemonos-main.webp';
+import juntemonos-final from '../../assets/images/juntemonos-final.webp';
 import onboardingFinalImage from '../../assets/images/cliengo-onboarding-final.webp';
 import aiImage from '../../assets/images/cliengo-ai.webp';
 import contactsImage from '../../assets/images/cliengo-contacts.webp';
 
 const highlights = [
 	{ label: 'Empresa', value: 'Cliengo' },
-	{ label: 'Período', value: '2024-2026' },
+	{ label: 'Período', value: '2026' },
 	{ label: 'Rol', value: 'Diseñadora UX/UI' },
 ];
 
@@ -113,8 +113,8 @@ const caseStudySchema = [
 			<section class="lead-image-section">
 				<Image
 					class="lead-image"
-	src={cliengoMainImage}
-	alt="Interfaces de Cliengo"
+	src={juntemonos-main}
+	alt="Interfaces de Juntemonos"
 	decoding="async"
 	widths={[720, 1080, 1440]}
 	sizes="(max-width: 78rem) 100vw, 78rem"
