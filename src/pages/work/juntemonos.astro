@@ -127,8 +127,9 @@ class="behance-link"
 	src={juntemonosmain}
 	alt="Interfaces de Juntemonos"
 	decoding="async"
-	widths={[720, 1080, 1440]}
+	widths={[720, 1080, 1440, 1920, 2560]}
 	sizes="(max-width: 78rem) 100vw, 78rem"
+quality={90}
 				/>
 			</section>
 
@@ -355,23 +356,27 @@ Realicé pruebas de usabilidad con 5 usuarios. La principal fricción apareció 
 	}
 
 	.lead-image {
-		width: 100%;
-		border: 1px solid var(--border);
-		border-radius: 0.3rem;
-		box-shadow: none;
-	}
+	width: 100%;
+	height: auto;
+	display: block;
+	border: 1px solid var(--border);
+	border-radius: 0.3rem;
+	box-shadow: none;
+}
 
 	.supporting-image-section {
 		padding: 2rem 0 4rem;
 		border-bottom: none;
 	}
 
-	.supporting-image {
-		width: 100%;
-		border: 1px solid var(--border);
-		border-radius: 0.3rem;
-		box-shadow: none;
-	}
+.supporting-image {
+	width: 100%;
+	height: auto;
+	display: block;
+	border: 1px solid var(--border);
+	border-radius: 0.3rem;
+	box-shadow: none;
+}
 
 	.summary-section {
 		padding: 0 0 3rem;
