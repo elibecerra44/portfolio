@@ -38,7 +38,7 @@ export const projects: Project[] = [
 			'A more humane CRM experience for teams balancing operational detail with relationship-driven work.',
 		background: 'cyan',
 		variant: 'split',
-		href: '/work/nextpoint',
+		href: '/work/juntemonos',
 		image: bcombsImage,
 		alt: 'b.combs CRM preview showing nonprofit workflow screens',
 		imageClass: 'project-preview-image',
