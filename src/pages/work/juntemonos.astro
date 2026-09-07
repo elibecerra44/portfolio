@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import { siteConfig } from '../../config/site';
-import juntemonosmain from '../../assets/images/juntemonos-main.webp';
+import juntemonosmain from '../../assets/images/juntemonos-main-2600.png';
 import juntemonosfinal from '../../assets/images/juntemonos-final.webp';
 import onboardingFinalImage from '../../assets/images/cliengo-onboarding-final.webp';
 import aiImage from '../../assets/images/cliengo-ai.webp';
@@ -122,15 +122,11 @@ class="behance-link"
 			</section>
 
 			<section class="lead-image-section">
-				<Image
-					class="lead-image"
-	src={juntemonosmain}
-	alt="Interfaces de Juntemonos"
-	decoding="async"
-	widths={[720, 1080, 1440, 1920, 2560]}
-	sizes="(max-width: 78rem) 100vw, 78rem"
-quality={90}
-				/>
+			<img
+	class="lead-image"
+	src={juntemonosmain.src}
+	alt="Interfaces de Juntémonos"
+/>
 			</section>
 
 			<section class="summary-section first-case">
