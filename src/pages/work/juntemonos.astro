@@ -10,7 +10,7 @@ import aiImage from '../../assets/images/cliengo-ai.webp';
 import contactsImage from '../../assets/images/cliengo-contacts.webp';
 
 const highlights = [
-	{ label: 'Empresa', value: 'Cliengo' },
+	{ label: 'Tipo de proyecto', value: 'UX Challenge' },
 	{ label: 'Período', value: '2026' },
 	{ label: 'Rol', value: 'Diseñadora UX/UI' },
 ];
@@ -50,10 +50,10 @@ const caseStudySchema = [
 	{
 		'@context': 'https://schema.org',
 		'@type': 'CreativeWork',
-		name: 'Cliengo Case Study',
-		headline: 'Cliengo | Product Design Case Studies',
+		name: 'Juntemonos Case Study',
+		headline: 'Juntemonos | Product Design Case Studies',
 		description:
-			'Algunas de las funcionalidades en las que trabajé durante mi paso por Cliengo.',
+			'UX Challenge Juntemonos.',
 		url: caseStudyUrl,
 		author: {
 			'@type': 'Person',
@@ -70,9 +70,9 @@ const caseStudySchema = [
 ---
 
 <Layout
-	title="Cliengo | Product Design Case Studies"
-	description="Algunas de las funcionalidades en las que trabajé durante mi paso por Cliengo."
-	ogImageAlt="Cliengo product design case studies"
+	title="Juntémonos | Product Design Case Studies"
+	description="Juntémonos | Product Design Case Studies."
+	ogImageAlt="Juntémonos | Product Design Case Studies"
 	schema={caseStudySchema}
 >
 	<a class="skip-link" href="#main-content">Skip to content</a>
@@ -85,17 +85,20 @@ const caseStudySchema = [
 				<p class="eyebrow">
 					<a class="breadcrumb-link" href="/work">Product Design</a>
 					<span class="breadcrumb-separator" aria-hidden="true">/</span>
-					<span>SaaS B2B</span>
+					<span>UX Challenge</span>
 				</p>
-				<h1 class="display-title">Diseño de experiencias para Cliengo.</h1>
+				<h1 class="display-title">Juntémonos app.</h1>
 				<div class="hero-subgrid">
 	<div class="hero-text hero-intro">
 		<p>
-			Una selección de proyectos en los que trabajé como UX/UI Designer, abordando desafíos vinculados al onboarding, inteligencia artificial y la evolución de funcionalidades centrales de la plataforma.
+			
+Juntémonos es una app que ayudaa a grupos de amigos con agendas cambiantes a encontrar momentos para verse con frecuencia y reorganizar sus planes cuando aparecen imprevistos.
 		</p>
 
 		<p>
-			Cliengo es una plataforma SaaS de automatización conversacional que ayuda a las empresas a captar y gestionar oportunidades de venta mediante chatbots, inteligencia artificial y herramientas para centralizar conversaciones con sus clientes.
+			Este es un proyecto ficticio, desarrollado en el marco de un UX Challenge. Como punto de partida recibí un conjunto de entrevistas realizadas a siete integrantes de un grupo y, a partir de ese material, desarrollé el proceso de diseño.
+
+Esta es una versión resumida del proyecto. Podés ver el case study completo en Behance →
 		</p>
 	</div>
 </div>
@@ -122,19 +125,16 @@ const caseStudySchema = [
 			</section>
 
 			<section class="summary-section first-case">
-				<p class="section-kicker">Caso 1</p>
-				<h2>Rediseño de onboarding self service.</h2>
+				<p class="section-kicker">El proyecto</p>
+				<h2>Una app para convertir ese “tenemos que juntarnos” en encuentros reales.</h2>
 				<div class="summary-main">
 		<p>
-			<strong>¿Cómo ayudar a los nuevos usuarios a descurbrir el valor que Cliengo puede aportar a su negocio?.</strong>
+			¿Cuánto hace que ese “tenemos que juntarnos” quedó solo en un mensaje? Juntémonos busca encontrar el mejor momento para hacerlo realidad, teniendo en cuenta la disponibilidad de cada integrante y los cambios de agenda que pueden aparecer en el camino.
 		</p>
+
 <p>
 			
-Abordé el proyecto de forma colaborativa junto a Producto, Customer Success, Onboarding y Desarrollo, buscando entender las principales fricciones de la experiencia actual y qué necesitan configurar los nuevos usuarios para conocer el todo el potencial y valor de Cliengo. Las decisiones de diseño se validaron durante todo el proceso con los distintos equipos, teniendo en cuenta además una capacidad de desarrollo limitada. Esto nos llevó a priorizar una solución simple de implementar, escalable y fácil de iterar.
-		</p>
-<p>
-			
- <strong>Mi rol:</strong> Análisis de la experiencia actual y benchmark · Alineamiento con stakeholders · Diseño de flujos · Prototipado interactivo con IA · Validación técnica con Desarrollo · Planificación y ejecución de pruebas de usabilidad · Diseño UI final · Documentación funcional en Jira.
+ <strong>Mi rol:</strong> Análisis de entrevistas · Benchmark · Definición del problema · Arquitectura de información - Taks flows · Wireframes · Design System · Diseño UI · Prototipado interactivo con IA · Planificación y ejecución de pruebas de usabilidad · Análisis de resultados.
 		</p>
 	</div>
 			</section>
@@ -143,7 +143,7 @@ Abordé el proyecto de forma colaborativa junto a Producto, Customer Success, On
 				<Image
 					class="supporting-image"
 					src={juntemonosfinal}
-					alt="Pantallas del onboarding self service de Cliengo"
+					alt="Pantallas juntemonos"
 					loading="lazy"
 					decoding="async"
 					widths={[720, 1080, 1440]}
@@ -153,18 +153,21 @@ Abordé el proyecto de forma colaborativa junto a Producto, Customer Success, On
 
 			<section class="editorial-section" id="process">
 				<div class="section-rail">
-					<p class="section-kicker">Contexto</p>
+					<p class="section-kicker">Investigación y definición</p>
 				</div>
 				<div class="story-block">
 					<p>
-						Cliengo estaba registrando un churn importante durante los primeros meses de vida de sus usuarios.
-					</p>
-					<p>
-						Una de las hipótesis era que el onboarding no estaba ayudando a los usuarios a entender el verdadero valor que Cliengo podía aportar a sus negocios. Además, había quedado desactualizado y presentaba una baja tasa de finalización.
+						Analicé las entrevistas mediante un mapa de afinidad, manteniendo la trazabilidad de los hallazgos por participante para identificar patrones y problemáticas recurrentes.
+En este analisis resultó claro que el principal problema estaba en coordinar la fecha. La dificultad no era la falta de interés por encontrarse, sino la incertidumbre sobre la disponibilidad futura y los cambios inesperados de agenda.
 					</p>
 					<p>
 						
-El recorrido se enfocaba principalmente en configurar un chatbot o el Inbox, pero esto no era suficiente para que un nuevo cliente pudiera dejar su cuenta realmente preparada para empezar a trabajar.
+Complementé el análisis con un benchmark de productos existentes, utilizando IA para relevar alternativas y analizar sus propuestas de valor. La mayoría se enfocaba en sincronizar calendarios o resolver la logística del evento, pero no abordaba qué sucede cuando los planes cambian a último momento.
+					</p>
+					<p>
+						
+Esto permitió definir el problema:
+<strong>¿Cómo encontrar momentos de encuentro frecuentes entre personas con agendas cambiantes y reducir el impacto de las cancelaciones de última hora?</strong>
 					</p>
 				</div>
 			</section>
@@ -173,81 +176,50 @@ El recorrido se enfocaba principalmente en configurar un chatbot o el Inbox, per
 
 			<section class="editorial-section">
 				<div class="section-rail">
-					<p class="section-kicker">El desafío</p>
+					<p class="section-kicker">Proceso y diseño final</p>
 				</div>
 				<div class="story-block">
 					<p>
-						Lograr un setup funcional al finalizar el onboarding.
+						Para comenzar a diseñar la solución, trabajé sobre dos escenarios principales: personas cuya disponibilidad cambia frecuentemente y personas a las que pueden surgirles imprevistos de último momento.
 					</p>
 					<p>
 						
-La pregunta que guió el proyecto fue: ¿qué necesita configurar un usuario para entender realmente el valor de Cliengo? 
+A partir de estos casos definí los task flows y algunas decisiones centrales de arquitectura. Una de ellas fue permitir cargar una disponibilidad habitual a nivel perfil y, al mismo tiempo, modificarla para un encuentro específico. De esta manera, quienes tienen rutinas estables no necesitan configurar sus horarios cada vez, mientras que quienes tienen agendas variables pueden ajustarlos para el próximo encuentro. Para simplificar la primera versión, también definí grupo y encuentro recurrente como una misma entidad. Por ejemplo, “Amigos del colegio” funciona como grupo y, al mismo tiempo, contiene la recurrencia de sus próximos encuentros. 
 					</p>
 					<p>
 						
-A partir de este interrogante, definimos un recorrido ideal que contemplara las distintas funcionalidades necesarias para poner la plataforma en funcionamiento, sin limitar al usuario a un único camino.
-Al mismo tiempo, era importante encontrar una solución que pudiera implementarse con una capacidad de desarrollo limitada y que fuera fácil de iterar en el futuro.
+A partir de estas definiciones avancé con wireframes, Design System y diseño UI hasta construir la propuesta final.
 					</p>
 				</div>
 			</section>
 
 			<section class="editorial-section">
 	<div class="section-rail">
-		<p class="section-kicker">La propuesta</p>
-	</div>
-
-	<div class="story-block">
-	<p>
-		Reemplazar el wizard con el que contábamos por una nueva sección dentro de la plataforma: “Primeros pasos en Cliengo”.
-	</p>
-
-	<p>
-		En lugar de encerrar al usuario en un flujo lineal, cada configuración se convirtió en un módulo independiente dentro de esta sección. Así, el usuario podía avanzar a su propio ritmo, volver a consultar cada paso cuando lo necesitara y visualizar cuánto le faltaba para completar la configuración.
-	</p>
-
-	<p>
-		También incorporamos una sección de “Obtener ayuda”, que permitía acceder a contenido de soporte directamente desde la experiencia.
-	</p>
-<p>
-		La nueva sección pasó a ser la pantalla de inicio por defecto para los nuevos usuarios, reemplazando el dashboard inicial, que mostraba métricas y conversaciones vacías y aportaba poco valor en esa instancia del recorrido.
-	</p>
-</div>
-</section>
-<section class="editorial-section">
-	<div class="section-rail">
 		<p class="section-kicker">Pruebas de usabilidad</p>
 	</div>
 
 	<div class="story-block">
-		<p>
-			Uno de los pasos principales de “Primeros pasos” era configurar un chatbot. Por su complejidad, decidí diseñar un wizard de configuración que acompañara al usuario durante el proceso y le permitiera elegir entre configurar un chatbot tradicional, entrenar uno con IA o combinar ambas opciones en un chatbot híbrido.
-		</p>
-<p>
-			
-Para explorar esta solución desarrollé un prototipo de media fidelidad apoyado en IA, que me permitió iterar rápidamente sobre el flujo y validarlo con los stakeholders antes de avanzar al diseño final.
-		</p>
-<p>
-			Luego utilicé este mismo prototipo para realizar pruebas de usabilidad con 5 participantes. Los hallazgos permitieron detectar principalmente problemas de comprensión en algunos conceptos y textos de la interfaz, que fueron incorporados y ajustados en la propuesta final.
-		</p>
-	</div>
-</section>
-<section class="editorial-section no-divider">
-	<div class="section-rail">
-		<p class="section-kicker">Diseño final</p>
-	</div>
+	<p>
+		Construí un prototipo interactivo con Figma Make para validar dos interacciones centrales antes de cerrar la propuesta: la carga de disponibilidad y la priorización de las fechas sugeridas por la aplicación.
+	</p>
 
-	<div class="story-block">
-		<p>
-			Una experiencia de onboarding más clara, flexible y orientada a generar valor desde el primer día.
-La sección de “Primeros pasos” guía al usuario hacia una configuración funcional sin limitar su recorrido y permitira iterar el onboarding de manera modular.
-		</p>
-	</div>
+	<p>
+		
+Realicé pruebas de usabilidad con 5 usuarios. La principal fricción apareció al intentar modificar disponibilidades ya cargadas: todos intentaron interactuar directamente con las barras de horarios antes de descubrir el modo de edición, y uno de los participantes no logró completar la tarea.
+	</p>
+
+	<p>
+		El hallazgo permitió identificar un problema concreto de descubribilidad y definir una mejora para la siguiente iteración: mantener el acceso al modo de edición siempre visible, en lugar de requerir que el usuario lo descubra durante la interacción.
+	</p>
+
+</div>
 </section>
+
 <section class="supporting-image-section">
 	<Image
 		class="supporting-image"
-		src={onboardingFinalImage}
-		alt="Diseño final del onboarding self service de Cliengo"
+		src={juntemonosfinal}
+		alt="Diseño final de la app Juntémonos"
 		loading="lazy"
 		decoding="async"
 		widths={[720, 1080, 1440]}
