@@ -23,7 +23,7 @@ export const workPageSize = 10;
 export const projects: Project[] = [
 	{
 		name: 'CLIENGO · B2B SAAS',
-		title: 'Diseño de experiencias para un CRM SaaS que centraliza conversaciones, automatiza la gestión de leads e incorpora herramientas de IA.',
+		title: 'Diseño de experiencias para un CRM que centraliza la gestión de leads e incorpora IA.',
 		description:
 			'seleccion de proyectos en Cliengo',
 		background: 'lime',
@@ -47,7 +47,7 @@ export const projects: Project[] = [
 	},
 	{
 		name: 'UX CHALLENGE · FINTECH',
-		title: 'Tarjetas Asignables: Una funcionalidad para simplificar la asignación y administración de gastos corporativos.',
+		title: 'Tarjetas Asignables simplifica la asignación y administración de gastos corporativos.',
 		description:
 			'Una funcionalidad para simplificar la asignación y gestión de fondos destinados a viáticos y gastos operativos.',
 		background: 'lavender',
