@@ -2,7 +2,9 @@ import type { ImageMetadata } from 'astro';
 import bcombsImage from '../assets/images/bcombs.webp';
 import boardspeakImage from '../assets/images/boardspeak.webp';
 import nestaraImage from '../assets/images/nestara.webp';
-import cliengoOnboardingImage from '../assets/images/cliengo-onboarding.webp';
+import cliengoOnboardingImage from '../assets/images/cliengo-home.webp';
+import juntemonoshome from '../assets/images/juntemonos-home.webp';
+import bowpayhome from '../assets/images/bowpay-home.webp';
 
 export type Project = {
 	name: string;
@@ -20,38 +22,38 @@ export const workPageSize = 10;
 
 export const projects: Project[] = [
 	{
-		name: 'Cliengo',
-		title: 'Rediseño de onboarding self-service',
+		name: 'CLIENGO · B2B SAAS',
+		title: 'Diseño de experiencias para un CRM SaaS que centraliza conversaciones, automatiza la gestión de leads e incorpora herramientas de IA.',
 		description:
-			'Rediseño de la experiencia de onboarding para acompañar a los nuevos usuarios en sus primeros pasos y ayudarlos a descubrir el valor de la plataforma.',
+			'seleccion de proyectos en Cliengo',
 		background: 'lime',
 		variant: 'desktop',
 		href: '/work/cliengo',
 		image: cliengoOnboardingImage,
-		alt: 'Pantalla de onboarding de Cliengo mostrando los primeros pasos para configurar la cuenta',
+		alt: 'Pantallas de cliengo',
 		imageClass: 'project-preview-image',
 	},
 	{
-		name: 'b.combs',
-		title: 'A CRM designed around people and the work behind the data',
+		name: 'UX CHALLENGE · SOCIAL APP',
+		title: 'App para mantener encuentros frecuentes con tu grupo de amigos',
 		description:
-			'A more humane CRM experience for teams balancing operational detail with relationship-driven work.',
+			'Diseño de app para mantener encuentros frecuentes con tu grupo de amigos',
 		background: 'cyan',
 		variant: 'split',
 		href: '/work/juntemonos',
-		image: bcombsImage,
-		alt: 'b.combs CRM preview showing nonprofit workflow screens',
+		image: juntemonoshome,
+		alt: 'imaganes de 3 pantallas mobile de juntemonos',
 		imageClass: 'project-preview-image',
 	},
 	{
-		name: 'Bow Pay',
-		title: 'Tarjetas asignables para gastos corporativos',
+		name: 'UX CHALLENGE · FINTECH',
+		title: 'Tarjetas Asignables: Una funcionalidad para simplificar la asignación y administración de gastos corporativos.',
 		description:
 			'Una funcionalidad para simplificar la asignación y gestión de fondos destinados a viáticos y gastos operativos.',
 		background: 'lavender',
 		variant: 'mobile',
 		href: '/work/bow-pay',
-		image: nestaraImage,
+		image: bowpayhome,
 		alt: 'Preview de las pantallas de Bow Pay',
 		imageClass: 'project-preview-image',
 	},
