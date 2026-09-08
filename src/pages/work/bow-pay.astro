@@ -3,8 +3,8 @@ import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import { siteConfig } from '../../config/site';
-import juntemonosmain from '../../assets/images/juntemonos-main-2600.png';
-import juntemonosfinal from '../../assets/images/juntemonos-final-2600.png';
+import bowpaymain from '../../assets/images/bowpay-main-2600.png';
+import bowpayfinal from '../../assets/images/bowpay-final-2600.png';
 
 const highlights = [
 	{ label: 'Tipo de proyecto', value: 'UX Challenge' },
@@ -47,10 +47,10 @@ const caseStudySchema = [
 	{
 		'@context': 'https://schema.org',
 		'@type': 'CreativeWork',
-		name: 'Juntemonos Case Study',
-		headline: 'Juntemonos | Product Design Case Studies',
+		name: 'Bow Pay Case Study',
+		headline: 'Bow Pay | Product Design Case Studies',
 		description:
-			'UX Challenge Juntemonos.',
+			'UX Challenge Bow Pay.',
 		url: caseStudyUrl,
 		author: {
 			'@type': 'Person',
@@ -67,9 +67,9 @@ const caseStudySchema = [
 ---
 
 <Layout
-	title="Juntémonos | Product Design Case Studies"
-	description="Juntémonos | Product Design Case Studies."
-	ogImageAlt="Juntémonos | Product Design Case Studies"
+	title="Bow Pay | Product Design Case Studies"
+	description="Bow Pay | Product Design Case Studies."
+	ogImageAlt="Bow Pay | Product Design Case Studies"
 	schema={caseStudySchema}
 >
 	<a class="skip-link" href="#main-content">Skip to content</a>
@@ -82,22 +82,22 @@ const caseStudySchema = [
 				<p class="eyebrow"> 
 <a class="breadcrumb-link" href="/work">UX Challeng</a> 
 <span class="breadcrumb-separator" aria-hidden="true">/</span> 
-<span>App Mobile</span> </p>
-				<h1 class="display-title">Juntémonos app.</h1>
+<span>Fintech</span> </p>
+				<h1 class="display-title">Tarjetas Asignables - Bow Pay</h1>
 				<div class="hero-subgrid">
 	<div class="hero-text hero-intro">
 		<p>
 			
-Juntémonos es una app que ayudaa a grupos de amigos con agendas cambiantes a encontrar momentos para verse con frecuencia y reorganizar sus planes cuando aparecen imprevistos.
+ Una funcionalidad para simplificar la asignación y administración de gastos corporativos desde una plataforma de gestión de pagos.
 		</p>
 
 		<p>
-			Este es un proyecto ficticio, desarrollado en el marco de un UX Challenge. Como punto de partida recibí un conjunto de entrevistas realizadas a siete integrantes de un grupo y, a partir de ese material, desarrollé el proceso de diseño.
+			Este es un proyecto ficticio, desarrollado en el marco de un UX Challenge. Como punto de partida recibí un conjunto de testimonios provenientes de entrevistas con usuarios y, a partir de ese material, desarrollé el diseño de la funcionalidad dentro de una plataforma hipotética de gestión de pagos: Bow Pay.
 
 Esta es una versión resumida del proyecto. Podés ver el case study completo en{' '}
 <a
 class="behance-link"
-		href="https://www.behance.net/gallery/253501665/UX-UI-Juntmonos"
+		href="https://www.behance.net/gallery/253730921/UX-UI-Tarjetas-asignables"
 		target="_blank"
 		rel="noopener noreferrer"
 	>
@@ -120,43 +120,42 @@ class="behance-link"
 			<section class="lead-image-section">
 			<img
 	class="lead-image"
-	src={juntemonosmain.src}
-	alt="Interfaces de Juntémonos"
+	src={bowpaymain.src}
+	alt="Interfaces de Bow Pay"
 />
 			</section>
 
 			<section class="summary-section first-case">
 				<p class="section-kicker">El proyecto</p>
-				<h2>Una app para convertir ese “tenemos que juntarnos” en encuentros reales.</h2>
+				<h2>Una nueva forma de administrar gastos corporativos.</h2>
 				<div class="summary-main">
 		<p>
-			¿Cuánto hace que ese “tenemos que juntarnos” quedó solo en un mensaje? Juntémonos busca encontrar el mejor momento para hacerlo realidad, teniendo en cuenta la disponibilidad de cada integrante y los cambios de agenda que pueden aparecer en el camino.
+			¿Cómo asignar fondos a decenas de empleados sin realizar transferencias individuales y manteniendo el control sobre cómo se utilizan? Tarjetas Asignables nace como una funcionalidad para permitir a las empresas crear medios de pago digitales, asignarlos a sus empleados y definir cuánto y en qué pueden gastar.
 		</p>
 
 <p>
 			
- <strong>Mi rol:</strong> Análisis de entrevistas · Benchmark · Definición del problema · Arquitectura de información - Taks flows · Wireframes · Design System · Diseño UI · Prototipado interactivo con IA · Planificación y ejecución de pruebas de usabilidad · Análisis de resultados.
+ <strong>Mi rol:</strong> Análisis de la investigación · Definición del problema · Arquitectura de referencia · User flows · Wireframes · Exploración con IA · Diseño UI · Definición de casos de uso, estados e interacciones · Diseño de identidad visual
 		</p>
 	</div>
 			</section>
 
 			<section class="editorial-section" id="process">
 				<div class="section-rail">
-					<p class="section-kicker">Investigación y definición</p>
+					<p class="section-kicker">El desafío</p>
 				</div>
 				<div class="story-block">
 					<p>
-						Analicé las entrevistas mediante un mapa de afinidad, manteniendo la trazabilidad de los hallazgos por participante para identificar patrones y problemáticas recurrentes.
-En este analisis resultó claro que el principal problema estaba en coordinar la fecha. La dificultad no era la falta de interés por encontrarse, sino la incertidumbre sobre la disponibilidad futura y los cambios inesperados de agenda.
+						Asignar fondos es solo una parte del problema
+El análisis de los testimonios mostró que la gestión de viáticos y gastos corporativos generaba fricciones tanto antes como después de asignar el dinero.
 					</p>
 					<p>
 						
-Complementé el análisis con un benchmark de productos existentes, utilizando IA para relevar alternativas y analizar sus propuestas de valor. La mayoría se enfocaba en sincronizar calendarios o resolver la logística del evento, pero no abordaba qué sucede cuando los planes cambian a último momento.
+Los administradores debían realizar transferencias individuales a cada empleado y, una vez entregados los fondos, tenían poca visibilidad sobre cuánto se había gastado, en qué se había utilizado o si se había superado el presupuesto previsto.
 					</p>
 					<p>
 						
-Esto permitió definir el problema:
-<strong>¿Cómo encontrar momentos de encuentro frecuentes entre personas con agendas cambiantes y reducir el impacto de las cancelaciones de última hora?</strong>
+El desafío no era solamente agilizar la distribución de fondos, sino diseñar una forma de asignarlos, establecer límites y mantener el control sobre los gastos desde un mismo lugar.
 					</p>
 				</div>
 			</section>
@@ -165,19 +164,64 @@ Esto permitió definir el problema:
 
 			<section class="editorial-section">
 				<div class="section-rail">
-					<p class="section-kicker">Proceso y diseño final</p>
+					<p class="section-kicker">Proceso</p>
 				</div>
 				<div class="story-block">
 					<p>
-						Para comenzar a diseñar la solución, trabajé sobre dos escenarios principales: personas cuya disponibilidad cambia frecuentemente y personas a las que pueden surgirles imprevistos de último momento.
+						Como no contaba con la arquitectura real de la plataforma, construí una estructura de referencia con las principales secciones que podrían formar parte de un sistema de gestión de pagos.
 					</p>
 					<p>
 						
-A partir de estos casos definí los task flows y algunas decisiones centrales de arquitectura. Una de ellas fue permitir cargar una disponibilidad habitual a nivel perfil y, al mismo tiempo, modificarla para un encuentro específico. De esta manera, quienes tienen rutinas estables no necesitan configurar sus horarios cada vez, mientras que quienes tienen agendas variables pueden ajustarlos para el próximo encuentro. Para simplificar la primera versión, también definí grupo y encuentro recurrente como una misma entidad. Por ejemplo, “Amigos del colegio” funciona como grupo y, al mismo tiempo, contiene la recurrencia de sus próximos encuentros. 
+
+Esto me permitió darle contexto a la funcionalidad, identificar qué áreas de la plataforma podían verse afectadas y diseñar tanto la experiencia del administrador que crea y gestiona las tarjetas como la del empleado que las recibe.
+A partir de los user flows avancé de forma iterativa desde wireframes de baja fidelidad, enfocados en validar la lógica de la solución, hasta definiciones de mayor detalle.
 					</p>
 					<p>
 						
-A partir de estas definiciones avancé con wireframes, Design System y diseño UI hasta construir la propuesta final.
+Durante esta etapa también utilicé prototipos generados con IA para explorar rápidamente diferentes alternativas de estructura e interacción antes de avanzar hacia los wireframes de media fidelidad y el diseño final.
+					</p>
+				</div>
+			</section>
+
+			<section class="editorial-section">
+	<div class="section-rail">
+		<p class="section-kicker">Propuesta</p>
+	</div>
+
+	<div class="story-block">
+	<p>
+		Una solución adaptable a distintas formas de gestionar los gastos
+Desde Bow Pay, un administrador puede crear Tarjetas Asignables: medios de pago digitales con límites y condiciones de uso definidos por la empresa. Cada empleado recibe su tarjeta directamente en la app y puede utilizarla durante el período establecido.
+En lugar de transferir el dinero por adelantado, los consumos se debitan de una cuenta de la empresa a medida que ocurren, respetando el límite configurado para cada tarjeta.
+	</p>
+
+	<p>
+		La solución permite definir diferentes estrategias de asignación. Las tarjetas pueden entregarse individualmente, por áreas o roles, o de forma masiva. También pueden configurarse según el tipo de gasto, estableciendo distintos límites y rubros habilitados.
+
+	</p>
+
+	<p>
+De esta manera, una empresa podría, por ejemplo, definir diferentes permisos para un gerente y un vendedor dentro de una misma política de viáticos, evitando además que cada empleado necesite acumular múltiples tarjetas para distintos gastos.
+	</p>
+	<p>
+La solución no impone un único modelo de gestión: permite a cada empresa definir cómo asignar los beneficios y luego analizar los gastos en función de esa estrategia.
+	</p>
+
+</div>
+</section>
+
+
+			<section class="editorial-section">
+				<div class="section-rail">
+					<p class="section-kicker">Diseño final</p>
+				</div>
+				<div class="story-block">
+					<p>
+						La propuesta final contempla las dos caras de la experiencia: por un lado, el administrador que crea, configura, y asigna las Tarjetas Asignables desde la plataforma; por otro, el empleado que recibe su tarjeta en una app mobile.
+					</p>
+					<p>
+						
+El diseño busca mantener la complejidad de configuración del lado administrativo y ofrecer al empleado una experiencia simple al momento de consultar o usar su tarjeta.
 					</p>
 				</div>
 			</section>
@@ -185,35 +229,13 @@ A partir de estas definiciones avancé con wireframes, Design System y diseño U
 <section class="supporting-image-section">
 				<Image
 					class="lead-image""
-					src={juntemonosfinal}
-					alt="Pantallas juntemonos"
+					src={bowpayfinal}
+					alt="Pantallas BowPay"
 					widths={[720, 1080, 1440, 1920, 2560]}
 					sizes="(max-width: 78rem) 100vw, 78rem"
 format="png"
 				/>
 			</section>
-
-			<section class="editorial-section">
-	<div class="section-rail">
-		<p class="section-kicker">Pruebas de usabilidad</p>
-	</div>
-
-	<div class="story-block">
-	<p>
-		Construí un prototipo interactivo con Figma Make para validar dos interacciones centrales antes de cerrar la propuesta: la carga de disponibilidad y la priorización de las fechas sugeridas por la aplicación.
-	</p>
-
-	<p>
-		
-Realicé pruebas de usabilidad con 5 usuarios. La principal fricción apareció al intentar modificar disponibilidades ya cargadas: todos intentaron interactuar directamente con las barras de horarios antes de descubrir el modo de edición, y uno de los participantes no logró completar la tarea.
-	</p>
-
-	<p>
-		El hallazgo permitió identificar un problema concreto de descubribilidad y definir una mejora para la siguiente iteración: mantener el acceso al modo de edición siempre visible, en lugar de requerir que el usuario lo descubra durante la interacción.
-	</p>
-
-</div>
-</section>
 
 
 		</main>
