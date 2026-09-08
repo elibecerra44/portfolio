@@ -3,11 +3,11 @@ import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import { siteConfig } from '../../config/site';
-import cliengoMainImage from '../../assets/images/cliengo-main.webp';
-import onboardingImage from '../../assets/images/cliengo-onboardingOK.webp';
-import onboardingFinalImage from '../../assets/images/cliengo-onboarding-final.webp';
-import aiImage from '../../assets/images/cliengo-ai.webp';
-import contactsImage from '../../assets/images/cliengo-contacts.webp';
+import cliengoMainImage from '../../assets/images/Cliengo-main-2600.png';
+import onboardingImage from '../../assets/images/OB-2600.png';
+import onboardingFinalImage from '../../assets/images/OB-DiseñoFinal-2600.png';
+import aiImage from '../../assets/images/AsistIA-2600.png';
+import contactsImage from '../../assets/images/Contactos-2600.png';
 
 const highlights = [
 	{ label: 'Empresa', value: 'Cliengo' },
@@ -115,10 +115,9 @@ const caseStudySchema = [
 					class="lead-image"
 	src={cliengoMainImage}
 	alt="Interfaces de Cliengo"
-	decoding="async"
-	widths={[720, 1080, 1440]}
+	widths={[720, 1080, 1440, 1920, 2560]}
 	sizes="(max-width: 78rem) 100vw, 78rem"
-				/>
+	format="png"/>
 			</section>
 
 			<section class="summary-section first-case">
@@ -144,10 +143,9 @@ Abordé el proyecto de forma colaborativa junto a Producto, Customer Success, On
 					class="supporting-image"
 					src={onboardingImage}
 					alt="Pantallas del onboarding self service de Cliengo"
-					loading="lazy"
-					decoding="async"
-					widths={[720, 1080, 1440]}
-					sizes="(max-width: 78rem) 100vw, 78rem"
+					widths={[720, 1080, 1440, 1920, 2560]}
+	sizes="(max-width: 78rem) 100vw, 78rem"
+	format="png"
 				/>
 			</section>
 
@@ -248,10 +246,9 @@ La sección de “Primeros pasos” guía al usuario hacia una configuración fu
 		class="supporting-image"
 		src={onboardingFinalImage}
 		alt="Diseño final del onboarding self service de Cliengo"
-		loading="lazy"
-		decoding="async"
-		widths={[720, 1080, 1440]}
-		sizes="(max-width: 78rem) 100vw, 78rem"
+		widths={[720, 1080, 1440, 1920, 2560]}
+	sizes="(max-width: 78rem) 100vw, 78rem"
+	format="png"
 	/>
 </section>
 
@@ -279,10 +276,9 @@ En este caso me enfocaré en una de ellas: <strong>el asistente IA integrado a l
 		class="supporting-image"
 		src={aiImage}
 		alt="Funcionalidades de inteligencia artificial de Cliengo"
-		loading="lazy"
-		decoding="async"
-		widths={[720, 1080, 1440]}
-		sizes="(max-width: 78rem) 100vw, 78rem"
+		widths={[720, 1080, 1440, 1920, 2560]}
+	sizes="(max-width: 78rem) 100vw, 78rem"
+	format="png"
 	/>
 </section>
 <section class="editorial-section">
@@ -363,10 +359,9 @@ El proyecto buscó redefinir contacto como una entidad única e independiente de
 		class="supporting-image"
 		src={contactsImage}
 		alt="Proyecto de unificación de contactos de Cliengo"
-		loading="lazy"
-		decoding="async"
-		widths={[720, 1080, 1440]}
-		sizes="(max-width: 78rem) 100vw, 78rem"
+		widths={[720, 1080, 1440, 1920, 2560]}
+	sizes="(max-width: 78rem) 100vw, 78rem"
+	format="png"
 	/>
 </section>
 
