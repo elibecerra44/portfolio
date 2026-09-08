@@ -4,10 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import { siteConfig } from '../../config/site';
 import juntemonosmain from '../../assets/images/juntemonos-main-2600.png';
-import juntemonosfinal from '../../assets/images/juntemonos-final.webp';
-import onboardingFinalImage from '../../assets/images/cliengo-onboarding-final.webp';
-import aiImage from '../../assets/images/cliengo-ai.webp';
-import contactsImage from '../../assets/images/cliengo-contacts.webp';
+import juntemonosfinal from '../../assets/images/juntemonos-final-2600.png';
 
 const highlights = [
 	{ label: 'Tipo de proyecto', value: 'UX Challenge' },
@@ -188,13 +185,12 @@ A partir de estas definiciones avancé con wireframes, Design System y diseño U
 
 <section class="supporting-image-section">
 				<Image
-					class="supporting-image"
+					class="lead-image""
 					src={juntemonosfinal}
 					alt="Pantallas juntemonos"
-					loading="lazy"
-					decoding="async"
-					widths={[720, 1080, 1440]}
+					widths={[720, 1080, 1440, 1920, 2560]}
 					sizes="(max-width: 78rem) 100vw, 78rem"
+format="png"
 				/>
 			</section>
 
