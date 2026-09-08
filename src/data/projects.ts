@@ -44,15 +44,15 @@ export const projects: Project[] = [
 		imageClass: 'project-preview-image',
 	},
 	{
-		name: 'Nestara',
-		title: 'Helping first-time buyers feel guided through a high-stress life decision',
+		name: 'Bow Pay',
+		title: 'Tarjetas asignables para gastos corporativos',
 		description:
-			'A mobile-first experience focused on reassurance, next-step clarity, and decision confidence.',
+			'Una funcionalidad para simplificar la asignación y gestión de fondos destinados a viáticos y gastos operativos.',
 		background: 'lavender',
 		variant: 'mobile',
-		href: '/work/nextpoint',
+		href: '/work/bow-pay',
 		image: nestaraImage,
-		alt: 'Nestara mobile app preview showing real estate product screens',
+		alt: 'Preview de las pantallas de Bow Pay',
 		imageClass: 'project-preview-image',
 	},
 	{
