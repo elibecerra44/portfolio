@@ -26,7 +26,7 @@ export const projects: Project[] = [
 		title: 'Diseño de experiencias para un CRM que centraliza la gestión de leads e incorpora IA.',
 		description:
 			'seleccion de proyectos en Cliengo',
-		background: 'lime',
+		background: 'lavender',
 		variant: 'desktop',
 		href: '/work/cliengo',
 		image: cliengoOnboardingImage,
@@ -50,7 +50,7 @@ export const projects: Project[] = [
 		title: 'Tarjetas Asignables simplifica la asignación y administración de gastos corporativos.',
 		description:
 			'Una funcionalidad para simplificar la asignación y gestión de fondos destinados a viáticos y gastos operativos.',
-		background: 'lavender',
+		background: 'mint',
 		variant: 'mobile',
 		href: '/work/bow-pay',
 		image: bowpayhome,
@@ -62,7 +62,7 @@ export const projects: Project[] = [
 		title: 'Turning community participation into a sustainable growth loop',
 		description:
 			'A civic product concept that makes participation feel rewarding, visible, and easier to sustain over time.',
-		background: 'mint',
+		background: 'lime',
 		variant: 'board',
 		href: '/work/nextpoint',
 		image: boardspeakImage,
