@@ -25,38 +25,40 @@ const base = import.meta.env.BASE_URL;
 				<h1>Projects built to make complex things feel clear, useful, and easier to trust.</h1>
 			</header>
 
-			<section class="works-list" aria-label="Project list">
-				{
-					visibleProjects.map((project) => (
-						<article class="work-card">
-							<div class="work-copy">
-								<p class="work-name">{project.name}</p>
-								<h2>{project.title}</h2>
-								<p class="work-description">{project.description}</p>
+		<section class="works-list" aria-label="Project list">
+	{
+		visibleProjects.map((project) => (
+			<article class="work-card">
+				<div class="work-copy">
+					<p class="work-name">{project.name}</p>
+					<h2>{project.title}</h2>
+					<p class="work-description">{project.description}</p>
 
-								<div class="actions">
-									<a href={`${base}/${project.href.replace(/^\//, '')}`}>
-										<span>View case study</span>
-										<span aria-hidden="true">-&gt;</span>
-									</a>
-								</div>
-							</div>
+					<div class="actions">
+						<a href={`${base}/${project.href.replace(/^\//, '')}`}>
+							<span>View case study</span>
+							<span aria-hidden="true">-&gt;</span>
+						</a>
+					</div>
+				</div>
 
-							<a class="work-visual" href={`${base}/${project.href.replace(/^\//, '')}`}>
-								<Image
-									class={project.imageClass}
-									src={project.image}
-									alt={project.alt}
-									loading="lazy"
-									decoding="async"
-									widths={[640, 960, 1280]}
-									sizes="(max-width: 860px) 100vw, 55vw"
-								/>
-							</a>
-						</article>
-					))
-				}
-			</section>
+				{project.image && (
+					<a class="work-visual" href={`${base}/${project.href.replace(/^\//, '')}`}>
+						<Image
+							class={project.imageClass}
+							src={project.image}
+							alt={project.alt ?? ''}
+							loading="lazy"
+							decoding="async"
+							widths={[640, 960, 1280]}
+							sizes="(max-width: 860px) 100vw, 55vw"
+						/>
+					</a>
+				)}
+			</article>
+		))
+	}
+</section>
 
 			<nav class="pagination" aria-label="Works pagination">
 				{
