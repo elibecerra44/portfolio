@@ -1,7 +1,4 @@
 import type { ImageMetadata } from 'astro';
-import bcombsImage from '../assets/images/bcombs.webp';
-import boardspeakImage from '../assets/images/boardspeak.webp';
-import nestaraImage from '../assets/images/nestara.webp';
 import cliengoOnboardingImage from '../assets/images/cliengo-home.webp';
 import juntemonoshome from '../assets/images/juntemonos-home.webp';
 import bowpayhome from '../assets/images/bowpay-home.webp';
@@ -58,15 +55,13 @@ export const projects: Project[] = [
 		imageClass: 'project-preview-image',
 	},
 	{
-		name: 'BoardSpeak',
-		title: 'Turning community participation into a sustainable growth loop',
+		name: 'PORFOLIO',
+		title: 'Conocé más sobre mi proceso de diseño, en Behance →',
+		title2: 'Explorá más trabajos visuales en Dribbble →',
 		description:
-			'A civic product concept that makes participation feel rewarding, visible, and easier to sustain over time.',
+			'En Behance podés encontrar mis casos de estudio completos, con más detalle sobre el proceso, las decisiones y las soluciones de diseño.',
 		background: 'lime',
 		variant: 'board',
 		href: '/work/nextpoint',
-		image: boardspeakImage,
-		alt: 'BoardSpeak web app preview showing rewards and community interface',
-		imageClass: 'project-preview-image',
 	},
 ];
