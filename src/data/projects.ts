@@ -62,6 +62,7 @@ export const projects: Project[] = [
 			'En Behance podés encontrar mis casos de estudio completos, con más detalle sobre el proceso, las decisiones y las soluciones de diseño.',
 		background: 'lime',
 		variant: 'board',
-		href: '/work/nextpoint',
+		href: '/work/nextpoint'
+		hidden: true,
 	},
 ];
