@@ -10,10 +10,18 @@ const currentYear = new Date().getFullYear();
 		{
 			showCta && (
 				<div class="shared-footer-cta">
-					<h2>Got something worth building? I'd love to hear about it.</h2>
+					<h2>¿Trabajamos juntos?</h2>
 					<p>
-						Check my <a class="shared-footer-inline-link" href="/resume">resume</a> or reach out directly if something here sparked an idea.
-					</p>
+		Si mi perfil encaja con lo que estás buscando, podés{' '}
+		<a
+			class="shared-footer-inline-link"
+			href={`${base}/files/eliana-becerra-cv.pdf`}
+			download
+		>
+			descargar mi CV
+		</a>
+		{' '}o contactarme directamente.
+	</p>
 					<a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
 				</div>
 			)
