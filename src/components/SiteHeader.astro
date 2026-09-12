@@ -20,25 +20,7 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 				</a>
 			))}
 
-			<div class="shared-menu">
-				<button
-					class="shared-menu-trigger"
-					type="button"
-					aria-haspopup="menu"
-					aria-expanded="false"
-					aria-controls={menuPanelId}
-				>
-					<span>Other</span>
-					<img src={`${base}/icons/chevron-down.svg`} alt="" width="16" height="16" />
-				</button>
-				<div class="shared-menu-panel" id={menuPanelId} role="menu" aria-label="More navigation pages">
-					{siteConfig.extraPages.map((link) => (
-						<a href={`${base}${link.href}`} role="menuitem">
-							{link.label}
-						</a>
-					))}
-				</div>
-			</div>
+	
 		</nav>
 
 		<button
