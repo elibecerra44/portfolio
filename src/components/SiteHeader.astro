@@ -85,19 +85,7 @@ const mobileSubmenuPanelId = 'shared-mobile-submenu-panel';
 
 				{siteConfig.navLinks.map((link) => <a href={`${base}${link.href}`}>{link.label}</a>)}
 
-				<details class="shared-mobile-submenu">
-					<summary
-						class="shared-mobile-submenu-trigger"
-						aria-expanded="false"
-						aria-controls={mobileSubmenuPanelId}
-					>
-						<span>Other</span>
-						<img src={`${base}/icons/chevron-down.svg`} alt="" width="16" height="16" />
-					</summary>
-					<div class="shared-mobile-submenu-panel" id={mobileSubmenuPanelId}>
-						{siteConfig.extraPages.map((link) => <a href={link.href}>{link.label}</a>)}
-					</div>
-				</details>
+		
 
 				<div class="shared-mobile-contact" aria-label="Contact links">
 					<a class="shared-mobile-contact-link" href={`mailto:${siteConfig.email}`} aria-label={`Email ${siteConfig.email}`}>
