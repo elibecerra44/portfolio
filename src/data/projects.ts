@@ -22,7 +22,7 @@ export const projects: Project[] = [
 		name: 'CLIENGO · B2B SAAS',
 		title: 'Diseño de experiencias para un CRM que centraliza la gestión de leads e incorpora IA.',
 		description:
-			'seleccion de proyectos en Cliengo',
+			'Una selección de proyectos en los que trabajé como UX/UI Designer, abordando desafíos de onboarding, inteligencia artificial y evolución de funcionalidades centrales de la plataforma.',
 		background: 'lavender',
 		variant: 'desktop',
 		href: '/work/cliengo',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
 		name: 'UX CHALLENGE · SOCIAL APP',
 		title: 'App para mantener encuentros frecuentes con tu grupo de amigos',
 		description:
-			'Diseño de app para mantener encuentros frecuentes con tu grupo de amigos',
+			'Una experiencia pensada para grupos con agendas cambiantes, que ayuda a encontrar el mejor momento para verse y adaptarse cuando surgen imprevistos.',
 		background: 'cyan',
 		variant: 'split',
 		href: '/work/juntemonos',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
 		name: 'UX CHALLENGE · FINTECH',
 		title: 'Tarjetas Asignables simplifica la asignación y administración de gastos corporativos.',
 		description:
-			'Una funcionalidad para simplificar la asignación y gestión de fondos destinados a viáticos y gastos operativos.',
+			'Una funcionalidad que permite a las empresas asignar medios de pago a sus empleados, definir límites y mantener el control sobre los gastos desde un único lugar.',
 		background: 'mint',
 		variant: 'mobile',
 		href: '/work/bow-pay',
