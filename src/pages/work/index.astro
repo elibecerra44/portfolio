@@ -6,7 +6,9 @@ import { projects, workPageSize } from '../../data/projects';
 
 const page = 1;
 const totalPages = Math.ceil(projects.length / workPageSize);
-const visibleProjects = projects.slice(0, workPageSize);
+const visibleProjects = projects
+	.filter((project) => !project.hidden)
+	.slice(0, workPageSize);
 const base = import.meta.env.BASE_URL;
 ---
 
